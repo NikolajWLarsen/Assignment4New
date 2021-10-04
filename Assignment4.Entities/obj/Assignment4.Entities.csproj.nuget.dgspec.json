@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Entities/Assignment4.Entities.csproj": {}
+    "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj": {}
   },
   "projects": {
-    "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Core/Assignment4.Core.csproj": {
+    "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Core/Assignment4.Core.csproj",
+        "projectUniqueName": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj",
         "projectName": "Assignment4.Core",
-        "projectPath": "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Core/Assignment4.Core.csproj",
-        "packagesPath": "/Users/nikolajworsoelarsen/.nuget/packages/",
-        "outputPath": "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Core/obj/",
+        "projectPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj",
+        "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nikolajworsoelarsen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -37,6 +37,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -52,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Entities/Assignment4.Entities.csproj": {
+    "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Entities/Assignment4.Entities.csproj",
+        "projectUniqueName": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj",
         "projectName": "Assignment4.Entities",
-        "projectPath": "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Entities/Assignment4.Entities.csproj",
-        "packagesPath": "/Users/nikolajworsoelarsen/.nuget/packages/",
-        "outputPath": "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Entities/obj/",
+        "projectPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj",
+        "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nikolajworsoelarsen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -78,8 +86,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Core/Assignment4.Core.csproj": {
-                "projectPath": "/Users/nikolajworsoelarsen/Assignment4New/Assignment4.Core/Assignment4.Core.csproj"
+              "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj": {
+                "projectPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj"
               }
             }
           }
@@ -108,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
