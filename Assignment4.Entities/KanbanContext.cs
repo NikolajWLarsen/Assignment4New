@@ -1,5 +1,6 @@
-using System.Data.Entities;
-using Microsoft.EntityFrameworkCore.DbContext;
+using Assignment4.Core;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Assignment4.Entities
 {

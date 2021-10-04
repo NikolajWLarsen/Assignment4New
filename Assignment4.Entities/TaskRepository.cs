@@ -33,18 +33,18 @@ namespace Assignment4.Entities
         }
 
         void Delete(int taskId, KanbanContext ctx) {
-            ctx.Remove(ctx.Tasks.Single(t => t.taskId == taskId));
+            ctx.Remove(ctx.Tasks.Single(t => t.Id == taskId));
             ctx.SaveChanges();
         }
 
         TaskDetailsDTO FindById(int id, KanbanContext ctx) {
-            var entity = ctx.Tasks.Where(t => t.taskId == id).Select(t => t.taskId);
+            var entity = ctx.Tasks.Where(t => t.Id == id).Select(t => t.Id);
 
             var taskDetails = from t in ctx.Tasks
-                        where t.taskId == id
+                        where t.Id == id
                         select new TaskDetailsDTO
                         {
-                            Id = t.ID,
+                            Id = t.Id,
                             Title = t.Title,
                             Description = t.Description,
                             AssignedToId = t.AssignedToId,
