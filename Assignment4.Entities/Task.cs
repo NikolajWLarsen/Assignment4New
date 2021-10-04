@@ -10,11 +10,11 @@ namespace Assignment4.Entities
 
         [Required]
         [StringLength(50)]
-        public int Title { get; set; }
+        public string Title { get; set; }
 
         public int AssignedTo { get; set; }
 
-        public int Description { get; set; }
+        public string Description { get; set; }
 
         [Required]
         public State State { get; set; }
