@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
 namespace Assignment4.Entities
 {
     public class User
@@ -9,7 +12,7 @@ namespace Assignment4.Entities
         public string Name { get; set; }
         
         [Required]
-        [IsUnique = true] //DataAnnotation
+        //[IsUnique = true] //DataAnnotation
         [StringLength(100)]
         public string Email { get; set; }
         

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fr0bSu6+3dByNUUtNPZ2Ou90EN2211Ocevr1ztFCvqHpjQuupaIoMukJqT9u5nOrqCsFaJMQ39fmdzbnMp9neg==",
+  "dgSpecHash": "cCEB7qDgqL9hiu4KkrFlYf5r6YQU4gsZ9rsxVot0QF60LVVM/C/8NVE8J6ZUkve7wYIpCRhaWm0GiMDGE/F3og==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\Assignment4.csproj",
+  "projectFilePath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\Assignment4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thomas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

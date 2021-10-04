@@ -1,3 +1,6 @@
+using System.Data.Entities;
+using Microsoft.EntityFrameworkCore.DbContext;
+
 namespace Assignment4.Entities
 {
     public class KanbanContext : DbContext

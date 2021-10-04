@@ -6253,11 +6253,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\Assignment4.csproj",
+      "projectUniqueName": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\Assignment4.csproj",
       "projectName": "Assignment4",
-      "projectPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\Assignment4.csproj",
+      "projectPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\Assignment4.csproj",
       "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\obj\\",
+      "outputPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6272,11 +6272,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj": {
-              "projectPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj"
+            "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj": {
+              "projectPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj"
             },
-            "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj": {
-              "projectPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj"
+            "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj": {
+              "projectPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj"
             }
           }
         }

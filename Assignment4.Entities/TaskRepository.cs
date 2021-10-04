@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using Assignment4.Core;
 
 namespace Assignment4.Entities
 {
@@ -6,7 +9,7 @@ namespace Assignment4.Entities
     {
         
         IReadOnlyCollection<TaskDTO> All(KanbanContext ctx) {
-
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -15,18 +18,18 @@ namespace Assignment4.Entities
         /// <param name="task"></param>
         /// <returns>The id of the newly created task</returns>
         int Create(TaskDTO task, KanbanContext ctx) {
-            ctx.Tasks.AddRange(
+            var tempTask = ctx.Tasks.AddRange(
                 new Task{
                     Id = task.Id,
                     Title = task.Title,
-                    AssignedTo = task.assignment4
+                    AssignedTo = -1,
                     Description = task.Description,
                     State = task.State,
-                    Tags = task.Tags
-                };
+                    Tags = new List<Tag>()
+                }
             );
             ctx.SaveChanges();
-            return task.id;
+            return task.Id;
         }
 
         void Delete(int taskId, KanbanContext ctx) {
@@ -35,25 +38,32 @@ namespace Assignment4.Entities
         }
 
         TaskDetailsDTO FindById(int id, KanbanContext ctx) {
-            ctx.Where(t => t.taskId == id).Select(t => t.taskId)
+            var entity = ctx.Tasks.Where(t => t.taskId == id).Select(t => t.taskId);
 
             var taskDetails = from t in ctx.Tasks
-                        where t.taskId equals id
+                        where t.taskId == id
                         select new TaskDetailsDTO
                         {
-                            t.ID,
-                            t.Title,
-                            t.Description,
-                            t.AssignedToId,
-                            t.AssignedToName,
-                            t.AssignedToEmail,
-                            t.Tags,
-                            t.State
+                            Id = t.ID,
+                            Title = t.Title,
+                            Description = t.Description,
+                            AssignedToId = t.AssignedToId,
+                            AssignedToName = t.AssignedToName,
+                            AssignedToEmail = t.AssignedToEmail,
+                            Tags = t.Tags,
+                            State = t.State
                         };
+                        
+            return taskDetails;
         }
 
         void Update(TaskDTO task, KanbanContext ctx) {
-
+            var temp = task;
+            Delete(task.Id, ctx);
+            // context.update
+            //temp
+            //Make a whole constructor in which we change the state.
+            Create(temp, ctx);
         }
     }
 }
