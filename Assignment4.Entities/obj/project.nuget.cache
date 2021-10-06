@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wTRnk2cJ4q7NLh1R57fxmUkcbwhFxkIsU3zipvF87YWqb3xJewpeQw7kK5pi2gTUdGHCqT9+AntK39SFUvjTbw==",
+  "dgSpecHash": "TFfAm9MNt/6+3UY1e1qqYMuqjfF2E6zsYmZQf4HPfyfGo4SXsdcmU59Z3IuWvDmfajH3M1mEoMZKALbcytjv5Q==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj",
+  "projectFilePath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thomas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

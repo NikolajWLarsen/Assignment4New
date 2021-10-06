@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj": {}
+    "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj": {
+    "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj",
         "projectName": "Assignment4.Core",
-        "projectPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj",
+        "projectPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\obj\\",
+        "outputPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj": {
+    "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj",
         "projectName": "Assignment4.Entities",
-        "projectPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj",
+        "projectPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj",
         "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\obj\\",
+        "outputPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -86,8 +86,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj": {
-                "projectPath": "c:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj"
+              "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj": {
+                "projectPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj"
               }
             }
           }

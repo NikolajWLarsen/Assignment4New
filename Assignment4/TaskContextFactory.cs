@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Assignment4;
+using Assignment4.Core;
 using Assignment4.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -30,11 +31,22 @@ namespace assignment4
 
         public static void Seed(KanbanContext context)
         {
-            // context.Database.ExecuteSqlRaw("DELETE dbo.Cities");
-            // context.Database.ExecuteSqlRaw("DBCC CHECKIDENT ('dbo.Characters', RESEED, 0)");
+            context.Database.ExecuteSqlRaw("DELETE dbo.Tasks");
+            context.Database.ExecuteSqlRaw("DELETE dbo.Tags");
+            context.Database.ExecuteSqlRaw("DELETE dbo.Users");
+            context.Database.ExecuteSqlRaw("DBCC CHECKIDENT ('dbo.Tasks', RESEED, 0)");
+            context.Database.ExecuteSqlRaw("DBCC CHECKIDENT ('dbo.Tags', RESEED, 0)");
+            context.Database.ExecuteSqlRaw("DBCC CHECKIDENT ('dbo.Users', RESEED, 0)");
 
-            // var metropolis = new City { Name = "Metropolis" };
-            // var gymnasticAbility = new Power { Name = "gymnastic ability" };
+            var Tag1 = new Tag { Id = 1, Name = "UI", tasks = new List<Task>() };
+            var Task1 = new Task {Id = 1, Title = "Nice task",  AssignedTo = 1, Description = "this is a very nice task it is very manageable please execute task", State = State.New, Tags = new List<Tag> {Tag1}};
+            var User1 = new User {Id = 1, Name = "NIWL", Email = "Niwl@itu.dk", Tasks = new List <Task>(){Task1}};
+            Tag1.tasks.Add(Task1);
+            
+            context.Tasks.Add(Task1);
+            context.Tags.Add(Tag1);
+            context.Users.Add(User1);
+            context.SaveChanges();
 
             // context.Characters.AddRange(
             //       new Character { GivenName = "Selina", Surname = "Kyle", AlterEgo = "Catwoman", Occupation = "Thief", City = gothamCity, Gender = Female, FirstAppearance = DateTime.Parse("1940-04-01"), Powers = new[] { exceptionalMartialArtist, gymnasticAbility, combatSkill } }

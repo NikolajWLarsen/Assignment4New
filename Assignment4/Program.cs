@@ -1,4 +1,5 @@
 ﻿using System;
+using assignment4;
 
 namespace Assignment4
 {
@@ -6,7 +7,9 @@ namespace Assignment4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var factory = new KanbanContextFactory();
+            var kanbanContext = factory.CreateDbContext(args);
+            KanbanContextFactory.Seed(kanbanContext);
         }
     }
 }
