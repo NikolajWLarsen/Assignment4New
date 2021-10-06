@@ -6251,19 +6251,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thomas\\.nuget\\packages\\": {}
+    "/Users/Freja/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\Assignment4.csproj",
+      "projectUniqueName": "/Users/Freja/Documents/Programmering/3.semester/BDSA/Assignment04/Assignment4New/Assignment4/Assignment4.csproj",
       "projectName": "Assignment4",
-      "projectPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\Assignment4.csproj",
-      "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4\\obj\\",
+      "projectPath": "/Users/Freja/Documents/Programmering/3.semester/BDSA/Assignment04/Assignment4New/Assignment4/Assignment4.csproj",
+      "packagesPath": "/Users/Freja/.nuget/packages/",
+      "outputPath": "/Users/Freja/Documents/Programmering/3.semester/BDSA/Assignment04/Assignment4New/Assignment4/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/Freja/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -6275,11 +6275,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj": {
-              "projectPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Core\\Assignment4.Core.csproj"
+            "/Users/Freja/Documents/Programmering/3.semester/BDSA/Assignment04/Assignment4New/Assignment4.Core/Assignment4.Core.csproj": {
+              "projectPath": "/Users/Freja/Documents/Programmering/3.semester/BDSA/Assignment04/Assignment4New/Assignment4.Core/Assignment4.Core.csproj"
             },
-            "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj": {
-              "projectPath": "C:\\Users\\Thomas\\Desktop\\3.semester\\BDSA\\assignments\\BDSA04\\Assignment4New\\Assignment4.Entities\\Assignment4.Entities.csproj"
+            "/Users/Freja/Documents/Programmering/3.semester/BDSA/Assignment04/Assignment4New/Assignment4.Entities/Assignment4.Entities.csproj": {
+              "projectPath": "/Users/Freja/Documents/Programmering/3.semester/BDSA/Assignment04/Assignment4New/Assignment4.Entities/Assignment4.Entities.csproj"
             }
           }
         }
@@ -6332,7 +6332,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

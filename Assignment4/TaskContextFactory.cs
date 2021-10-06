@@ -21,7 +21,8 @@ namespace assignment4
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            var connectionString = configuration.GetConnectionString("KanBanBoardDB");
+            var connectionString = configuration.GetConnectionString("KanbanBoard");
+            Console.WriteLine(connectionString);
 
             var optionsBuilder = new DbContextOptionsBuilder<KanbanContext>()
                 .UseSqlServer(connectionString);
@@ -38,10 +39,15 @@ namespace assignment4
             context.Database.ExecuteSqlRaw("DBCC CHECKIDENT ('dbo.Tags', RESEED, 0)");
             context.Database.ExecuteSqlRaw("DBCC CHECKIDENT ('dbo.Users', RESEED, 0)");
 
-            var Tag1 = new Tag { Id = 1, Name = "UI", tasks = new List<Task>() };
-            var Task1 = new Task {Id = 1, Title = "Nice task",  AssignedTo = 1, Description = "this is a very nice task it is very manageable please execute task", State = State.New, Tags = new List<Tag> {Tag1}};
-            var User1 = new User {Id = 1, Name = "NIWL", Email = "Niwl@itu.dk", Tasks = new List <Task>(){Task1}};
+            var Tag1 = new Tag { Id = 0, Name = "UI", tasks = new List<Task>() };
+            var Task1 = new Task {Id = 0, Title = "Nice task",  AssignedTo = 0, Description = "this is a very nice task it is very manageable please execute task", State = State.New, Tags = new List<Tag> {Tag1}};
+            var User1 = new User {Id = 0, Name = "NIWL", Email = "Niwl@itu.dk", Tasks = new List <Task>(){Task1}};
             Tag1.tasks.Add(Task1);
+
+            /*var Tag2 = new Tag { Id = 1, Name = "GUI stuff", tasks = new List<Task>() };
+            var Task2 = new Task {Id = 1, Title = "Super task",  AssignedTo = 1, Description = "this is a very nice task it is very manageable please execute task", State = State.New, Tags = new List<Tag> {Tag2}};
+            var User2 = new User {Id = 1, Name = "THWR", Email = "THWRl@itu.dk", Tasks = new List <Task>(){Task2}};
+            Tag2.tasks.Add(Task2);*/
             
             context.Tasks.Add(Task1);
             context.Tags.Add(Tag1);

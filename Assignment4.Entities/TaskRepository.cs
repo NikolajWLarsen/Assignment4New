@@ -14,23 +14,27 @@ namespace Assignment4.Entities
     
         }
         
-        public IReadOnlyCollection<TaskDTO> All() {
+        public IReadOnlyCollection<TaskDTO> All() 
+        {
 
-            var temp2 = _kanbanContext.Tasks.ToList();
-            return (IReadOnlyCollection<TaskDTO>) temp2;
-
-           // var temp3 = _kanbanContext.Entry("Tasks").Collection(t => t.Tags);
-
-            /*IReadOnlyCollection<TaskDTO> temp1 = _kanbanContext.Tasks
-            .SelectMany(task => new TaskDTO 
+            var TaskDTOs = new List<TaskDTO>(); 
+            var taskList = _kanbanContext.Tasks.ToList();
+            
+            foreach (var task in taskList)
             {
-                Id = task.Id,
-                Title = task.Title,
-                AssignedToId = task.AssignedTo,
-                Description = task.Description,
-                State = task.State,
-                Tags = ((IEnumerable<string>)task.Tags.SelectMany(tag => tag.Name))
-            });*/
+                var taskDTO = new TaskDTO
+                {
+                    Id = task.Id,
+                    Title = task.Title,
+                    Description = task.Description,
+                    AssignedToId = task.AssignedTo,
+                    Tags = null,
+                    State = task.State
+                };
+                TaskDTOs.Add(taskDTO);
+            }
+            return TaskDTOs;
+
         }
 
         /// <summary>
@@ -39,16 +43,17 @@ namespace Assignment4.Entities
         /// <param name="task"></param>
         /// <returns>The id of the newly created task</returns>
         public int Create(TaskDTO task) {
-            var tempTask = _kanbanContext.Tasks.Add(
-                new Task{
+
+            Task outputTask = new Task{
                     Id = task.Id,
                     Title = task.Title,
                     AssignedTo = (int) task.AssignedToId,
                     Description = task.Description,
                     State = task.State,
-                    Tags = ((ICollection<Tag>)task.Tags.SelectMany(tag => tag))
-                }
-            );
+                    //Tags = ((ICollection<Tag>)task.Tags.SelectMany(tag => tag))
+                };
+
+            _kanbanContext.Tasks.Add(outputTask);
             _kanbanContext.SaveChanges();
             return task.Id;
         }
@@ -59,37 +64,36 @@ namespace Assignment4.Entities
         }
 
         public TaskDetailsDTO FindById(int id) {
-            var taskDetails = from task in _kanbanContext.Tasks
-                        join user in _kanbanContext.Users on task.AssignedTo equals user.Id
-                        where task.Id == id
-                        select new TaskDetailsDTO
+            var temp = new List<string>() {"best string"};
+            //Console.WriteLine("Input id is: " + id);
+
+            var temp2 = _kanbanContext.Tasks.Find(id);
+            var taskDTO = new TaskDetailsDTO
                         {
-                            Id = task.Id,
-                            Title = task.Title,
-                            Description = task.Description,
-                            AssignedToId = task.AssignedTo,
-                            AssignedToName = user.Name,
-                            AssignedToEmail = user.Email,
-                            Tags = ((IEnumerable<string>)task.Tags.SelectMany(tag => tag.Name)),
-                            State = task.State
-                        };
-                        
-            return (TaskDetailsDTO) taskDetails;
+                            
+                            Id = temp2.Id,
+                            Title = temp2.Title,
+                            Description = temp2.Description,
+                            AssignedToId = temp2.AssignedTo,
+                            //AssignedToName = temp2.Name,
+                            //AssignedToEmail = temp2.Email,
+                            Tags = temp, //(IEnumerable<string>)task.Tags.SelectMany(tag => tag.Name).ToList(),
+                            State = temp2.State
+                        }; 
+                    
+            return taskDTO;
         }
 
-        public void Update(TaskDTO task) {
-            var temp = from task1 in _kanbanContext.Tasks
-            where task.Id == task1.Id
-            select task1;
+        public void Update(TaskDTO task) {        
             
-            
-            var taskResult = temp.Single();
+            var taskResult = _kanbanContext.Tasks.Single(t => task.Title == t.Title);
             taskResult.Title = task.Title;
-            taskResult.Id = task.Id; 
-            taskResult.AssignedTo = (int) task.AssignedToId;
             taskResult.Description = task.Description;
-            taskResult.State = task.State;
-
+            //taskResult.Id = task.Id; 
+             taskResult.AssignedTo = (int) task.AssignedToId;
+             taskResult.State = task.State;
+             //taskResult.Tags = task.Tags;
+ 
             _kanbanContext.SaveChanges();
         }
 
